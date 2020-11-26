@@ -1,0 +1,62 @@
+<div class="col-sm-8 col-sm-offset-2">
+<img src="assets/linkedin.jpeg"
+     [ngStyle]="
+     {
+      position: 'absolute',
+      top: '50%',
+      left: '50%',
+      transform: 'translate(-50%, -50%)',
+      clipPath: 'circle',
+      width: state.width / 8
+      }"
+      />
+
+<app-scene>
+  <app-drawn-path
+    id="Mountain__Large2"
+    [d]="'M144.74 244l37.38-54 37.39 54H48'"
+    [pathLength]="302.9"
+    duration="1.2"
+    delay="-0.1"
+  ></app-drawn-path>
+ <!-- <app-axial-symmetry>
+    <app-drawn-path
+      id="Mountain__Large"
+      [d]="'M144.74 244l37.38-54 37.39 54H48'"
+      [pathLength]="302.9"
+      duration="1.2"
+      delay="-0.1"
+    ></app-drawn-path>
+    <app-drawn-path
+      id="Mountain__Small"
+      d="M123 244l24.92-36 24.93 36"
+      pathLength={87.6}
+      duration={0.6}
+      delay={0.8}
+    ></app-drawn-path>
+  </app-axial-symmetry>
+  <app-radial-symmetry repeat=RAYS angle=ANGLE>
+    <app-drawn-path
+      id="Ray__Main"
+      d="M80 244H48"
+      pathLength={50}
+      duration={0.8}
+      delay={1.2}
+    ></app-drawn-path>
+    <app-drawn-path
+      id="Ray__Tip"
+      d="M41 244h-9"
+      pathLength={9}
+      duration={0.1}
+      delay={2}
+    ></app-drawn-path>
+  </app-radial-symmetry>
+  <app-scaled-path
+    d="M116 258h248"
+    id="Baseline"
+  y={1}
+  duration={0.6}
+  delay={1.7}
+  ></app-scaled-path>-->
+</app-scene>
+</div>
