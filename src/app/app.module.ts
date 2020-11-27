@@ -8,6 +8,7 @@ import {SceneComponent} from './components/svg-components/scene.component';
 import {DrawnPathComponent} from './components/svg-components/drawn-path.component';
 import {ScaledPathComponent} from './components/svg-components/scaled-path.component';
 import {RadialSymmetryComponent} from './components/svg-components/radial-symmetry.component';
+import { TopbarComponent } from './components/topbar/topbar.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import {RadialSymmetryComponent} from './components/svg-components/radial-symmet
     DrawnPathComponent,
     ScaledPathComponent,
     RadialSymmetryComponent,
+    TopbarComponent,
   ],
   imports: [
     BrowserModule
