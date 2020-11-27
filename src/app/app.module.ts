@@ -9,6 +9,8 @@ import {DrawnPathComponent} from './components/svg-components/drawn-path.compone
 import {ScaledPathComponent} from './components/svg-components/scaled-path.component';
 import {RadialSymmetryComponent} from './components/svg-components/radial-symmetry.component';
 import { TopbarComponent } from './components/topbar/topbar.component';
+import { BriefComponent } from './components/brief/brief.component';
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -20,9 +22,11 @@ import { TopbarComponent } from './components/topbar/topbar.component';
     ScaledPathComponent,
     RadialSymmetryComponent,
     TopbarComponent,
+    BriefComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
