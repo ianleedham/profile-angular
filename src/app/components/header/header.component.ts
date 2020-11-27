@@ -8,10 +8,10 @@ import {DomSanitizer, SafeStyle} from '@angular/platform-browser';
 })
 export class HeaderComponent implements OnInit {
   public state: { width: number; height: number };
+  public repeater = Array(14);
+  public width = 500;
 
-
-  RAYS = 14;
-  ANGLE = 180 / (this.RAYS - 1);
+  ANGLE = 180 / (13);
 
 
   // tslint:disable-next-line:variable-name
