@@ -11,6 +11,9 @@ import {RadialSymmetryComponent} from './components/svg-components/radial-symmet
 import { TopbarComponent } from './components/topbar/topbar.component';
 import { BriefComponent } from './components/brief/brief.component';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import { SkillsComponent } from './components/skills/skills/skills.component';
+import { SkillRowComponent } from './components/skills/skill-row/skill-row.component';
+import { SkillsColumnComponent } from './components/skills/skills-column/skills-column.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +26,9 @@ import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
     RadialSymmetryComponent,
     TopbarComponent,
     BriefComponent,
+    SkillsComponent,
+    SkillRowComponent,
+    SkillsColumnComponent,
   ],
   imports: [
     BrowserModule,
