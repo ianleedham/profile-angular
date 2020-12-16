@@ -20,7 +20,7 @@ export class SkillsComponent implements OnInit {
       },
       {
         name: 'C#',
-        level: 8
+        level: 9
       },
       {
         name: 'Dotnet core',
