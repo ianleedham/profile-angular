@@ -22,6 +22,9 @@ export class SkillsComponent implements OnInit {
         name: 'C#',
         level: 9
       },
+
+    ],
+    frameworks: [
       {
         name: 'Dotnet core',
         level: 8
@@ -29,6 +32,10 @@ export class SkillsComponent implements OnInit {
       {
         name: 'Dotnet framework',
         level: 7
+      },
+      {
+        name: 'Angular',
+        level: 5
       }
     ],
     tools: [
@@ -37,7 +44,7 @@ export class SkillsComponent implements OnInit {
         level: 8
       },
       {
-        name: 'MS SQL management studio',
+        name: 'SSMS',
         level: 7
       },
       {
