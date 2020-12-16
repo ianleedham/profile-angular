@@ -12,5 +12,9 @@ g, path {
 }
 
 .background-primary {
-  background-color: rgba(117, 25, 25, 0.7) !important;
+  background-color: rgba(117, 25, 25, 1) !important;
+}
+
+.colour-primary {
+  color: rgba(117, 25, 25, 1) !important;
 }
