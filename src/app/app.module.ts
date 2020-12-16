@@ -14,6 +14,7 @@ import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import { SkillsComponent } from './components/skills/skills/skills.component';
 import { SkillRowComponent } from './components/skills/skill-row/skill-row.component';
 import { SkillsColumnComponent } from './components/skills/skills-column/skills-column.component';
+import { ExperienceComponent } from './components/experience/experience.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { SkillsColumnComponent } from './components/skills/skills-column/skills-
     SkillsComponent,
     SkillRowComponent,
     SkillsColumnComponent,
+    ExperienceComponent,
   ],
   imports: [
     BrowserModule,
