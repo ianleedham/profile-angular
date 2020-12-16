@@ -1,10 +1,8 @@
-<div class='col-sm-11'>
-  <div class='row text-center'>
-    <div class='col'>
-      <h3>{{columnTitle}}</h3>
-    </div>
+<div class='row text-center'>
+  <div class='col'>
+    <h3>{{columnTitle}}</h3>
   </div>
-  <div >
-    <app-skill-row class='row' *ngFor="let skill of skills" [name]="skill.name" [level]="skill.level"></app-skill-row>
-  </div>
+</div>
+<div >
+  <app-skill-row class='row' *ngFor="let skill of skills" [name]="skill.name" [level]="skill.level"></app-skill-row>
 </div>

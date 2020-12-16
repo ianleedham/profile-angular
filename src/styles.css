@@ -10,3 +10,7 @@ g, path {
 @keyframes draw {
   to { stroke-dashoffset: 0 }
 }
+
+.background-primary {
+  background-color: rgba(117, 25, 25, 0.7) !important;
+}
