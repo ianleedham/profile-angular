@@ -2,47 +2,26 @@
   <div class='row'>
     <h1 class="col-12 mb-3"> Experience at EHS Data </h1>
   </div>
-  <div class='row row-cols-1 row-cols-md-3 g-4'>
-    <div class='col'>
-      <div class="card text-white background-primary">
-        <h3 class="card-header">
-          Register
-        </h3>
-        <div class="card-body">
-          <p class="card-text">
-            Register is the internal software application at EHSData which is in charge of keeping track of clients, licences for our products
-            (MonitorPro Desktop and MonitorPro Web) and invoicing for our clients.
-          </p>
-        </div>
-      </div>
+  <div class='row row-cols-1 row-cols-md-1 row-cols-lg-2 g-4'>
+    <div class='col my-2'>
+      <app-experience-card [title]="'Register'" [imageUrl]="'assets/Register-login.png'">
+        Register is the internal software application at EHSData which is in charge of keeping track of clients, licences for our products
+        (MonitorPro Desktop and MonitorPro Web) and invoicing for our clients.
+      </app-experience-card>
     </div>
-    <div class='col'>
-      <div class="card text-white background-primary">
-        <h3 class="card-header">
-            MonitorPro Web
-        </h3>
-        <div class="card-body">
-          <p class="card-text">
-            MPWeb is one of the main software products which EHSData sells.
-            MonitorPro gives organisations a single, centralised source for their environmental data.
-            Through an easy to use interface you can manage data and produce accurate reports
-            and analytics.
-          </p>
-        </div>
-      </div>
+    <div class='col my-2'>
+      <app-experience-card [title]="'MonitorPro Web'" [imageUrl]="'assets/Web-ScheduledTasks.png'">
+        MPWeb is one of the main software products which EHSData sells.
+        MonitorPro gives organisations a single, centralised source for their environmental data.
+        Through an easy to use interface you can manage data and produce accurate reports
+        and analytics.
+      </app-experience-card>
     </div>
-    <div class='col'>
-      <div class="card text-white background-primary">
-        <h3 class="card-header">
-          Activations Api
-        </h3>
-        <div class="card-body">
-          <p class="card-text">
-            MPActivations is a api which MonitorPro desktop uses to activate new instances of itself.
-            It checks that the organisation has enough spare licences and reduces their number of available licences.
-          </p>
-        </div>
-      </div>
+    <div class='col my-2'>
+      <app-experience-card [title]="'MPActivations'" [imageUrl]="'assets/MPActivation-profile-image.png'">
+        MPActivations is a api which MonitorPro desktop uses to activate new instances of itself.
+        It checks that the organisation has enough spare licences and reduces their number of available licences.
+      </app-experience-card>
     </div>
   </div>
 </div>

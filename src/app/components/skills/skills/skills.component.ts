@@ -26,11 +26,11 @@ export class SkillsComponent implements OnInit {
     ],
     frameworks: [
       {
-        name: 'Dotnet core',
+        name: '.Net core',
         level: 8
       },
       {
-        name: 'Dotnet framework',
+        name: '.Net Framework',
         level: 7
       },
       {

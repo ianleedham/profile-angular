@@ -1,0 +1,12 @@
+<div class="card bg-white text-white" (mouseenter) ="mouseEnter()"  (mouseleave) ="mouseLeave()">
+  <img src="{{imageUrl}}" class="card-img" alt="doggo" >
+
+  <div class="card-img-overlay background-primary opacity-8" [style.display]="showExcerpt ? 'initial' : 'none'">
+    <h4 class="card-title">
+      {{title}}
+    </h4>
+    <p class="card-text">
+      <ng-content></ng-content>
+    </p>
+  </div>
+</div>

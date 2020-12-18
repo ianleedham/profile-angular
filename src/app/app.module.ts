@@ -15,6 +15,7 @@ import { SkillsComponent } from './components/skills/skills/skills.component';
 import { SkillRowComponent } from './components/skills/skill-row/skill-row.component';
 import { SkillsColumnComponent } from './components/skills/skills-column/skills-column.component';
 import { ExperienceComponent } from './components/experience/experience.component';
+import { ExperienceCardComponent } from './components/experience/experience-card/experience-card.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { ExperienceComponent } from './components/experience/experience.componen
     SkillRowComponent,
     SkillsColumnComponent,
     ExperienceComponent,
+    ExperienceCardComponent,
   ],
   imports: [
     BrowserModule,

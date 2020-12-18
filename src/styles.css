@@ -18,3 +18,7 @@ g, path {
 .colour-primary {
   color: rgba(117, 25, 25, 1) !important;
 }
+
+.opacity-8 {
+  opacity: .8;
+}
