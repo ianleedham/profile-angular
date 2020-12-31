@@ -1,0 +1,60 @@
+<div class='col-12'>
+  <div class='row'>
+    <h1 class="col-12 mb-3"> Projects </h1>
+  </div>
+  <div class='row row-cols-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-3 g-4'>
+    <div class='col my-2'>
+      <app-project-card [title]="'Cantonese dictionary'" [imageUrl]="'assets/dictionary-app/1.jpg'"
+                            [overlayContent]="dictionaryOverlay">
+      </app-project-card>
+      <ng-template #dictionaryOverlay>
+        This Cantonese dictionary was my first ever software application which I made while studying Andriod mobile apps with Udacity.
+        I used Java and Android studio. Later I added the web application and api using PHP and Laravel.
+      </ng-template>
+    </div>
+    <div class='col my-2'>
+      <app-project-card [title]="'Register'" [imageUrl]="'assets/Register-login.png'"
+                           [overlayContent]="registerOverlay">
+      </app-project-card>
+      <ng-template #registerOverlay>Register is the internal software application at EHSData which is in charge of keeping track of clients, licences for our products
+        (MonitorPro Desktop and MonitorPro Web) and invoicing for our clients.
+      </ng-template>
+      <ng-template #registerModal>
+        <div class="m-4">
+          <h3> Monitor Pro Web</h3>
+          <span class="p-4">MPWeb is one of the main software products which EHSData sells.
+            MonitorPro gives organisations a single, centralised source for their environmental data.
+            Through an easy to use interface you can manage data and produce accurate reports
+            and analytics.
+          </span>
+          <div>
+            <img src="assets/dictionary-app/4.jpg" class="modal-image m-2"/>
+            <img src="assets/dictionary-app/1.jpg" class="modal-image m-2"/>
+            <img src="assets/dictionary-app/2.jpg" class="modal-image m-2"/>
+            <img src="assets/dictionary-app/3.jpg" class="modal-image m-2"/>
+          </div>
+        </div>
+      </ng-template>
+    </div>
+    <div class='col my-2'>
+      <app-project-card [title]="'MonitorPro Web'" [imageUrl]="'assets/Web-ScheduledTasks.png'"
+                           [overlayContent]="webOverlay">
+      </app-project-card>
+      <ng-template #webOverlay><span>MPWeb is one of the main software products which EHSData sells.
+            MonitorPro gives organisations a single, centralised source for their environmental data.
+            Through an easy to use interface you can manage data and produce accurate reports
+            and analytics.</span>
+      </ng-template>
+    </div>
+    <div class='col my-2'>
+      <app-project-card [title]="'MPActivations'" [imageUrl]="'assets/MPActivation-profile-image.png'"
+                           [overlayContent]="activationsApiOverlay">
+      </app-project-card>
+      <ng-template #activationsApiOverlay>
+        <span>MPActivations is a api which MonitorPro desktop uses to activate new instances of itself.
+        It checks that the organisation has enough spare licences and reduces their number of available licences.
+        </span>
+      </ng-template>
+    </div>
+  </div>
+</div>

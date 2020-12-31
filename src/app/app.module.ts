@@ -14,8 +14,9 @@ import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import { SkillsComponent } from './components/skills/skills/skills.component';
 import { SkillRowComponent } from './components/skills/skill-row/skill-row.component';
 import { SkillsColumnComponent } from './components/skills/skills-column/skills-column.component';
-import { ExperienceComponent } from './components/experience/experience.component';
-import { ExperienceCardComponent } from './components/experience/experience-card/experience-card.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { ProjectCardComponent } from './components/projects/project-card/project-card.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -31,12 +32,13 @@ import { ExperienceCardComponent } from './components/experience/experience-card
     SkillsComponent,
     SkillRowComponent,
     SkillsColumnComponent,
-    ExperienceComponent,
-    ExperienceCardComponent,
+    ProjectsComponent,
+    ProjectCardComponent,
   ],
   imports: [
     BrowserModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

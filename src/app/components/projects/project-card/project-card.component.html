@@ -1,4 +1,4 @@
-<div class="card bg-white text-white" (mouseenter) ="mouseEnter()"  (mouseleave) ="mouseLeave()">
+<div class="card bg-white text-white" (mouseenter) ="mouseEnter()"  (mouseleave) ="mouseLeave()" (click)="open()">
   <img src="{{imageUrl}}" class="card-img" alt="doggo" >
 
   <div class="card-img-overlay background-primary opacity-8" [style.display]="showExcerpt ? 'initial' : 'none'">
@@ -6,7 +6,7 @@
       {{title}}
     </h4>
     <p class="card-text">
-      <ng-content></ng-content>
+      <ng-container *ngTemplateOutlet="overlayContent"></ng-container>
     </p>
   </div>
 </div>
