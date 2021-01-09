@@ -5,45 +5,86 @@
   <div class='row row-cols-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-3 g-4'>
     <div class='col my-2'>
       <app-project-card [title]="'Cantonese dictionary'" [imageUrl]="'assets/dictionary-app/1.jpg'"
-                            [overlayContent]="dictionaryOverlay">
+                            [overlayContent]="dictionaryOverlay" [modalContent]="dictionaryModal" class="cursor-pointer">
       </app-project-card>
       <ng-template #dictionaryOverlay>
-        This Cantonese dictionary was my first ever software application which I made while studying Andriod mobile apps with Udacity.
-        I used Java and Android studio. Later I added the web application and api using PHP and Laravel.
+        <div class="row">A dictionary of all the words I knew in cantonese accessable from browser and mobile app with database persistance.</div>
+        <div class="row">
+          Key points: API, Mobile, Java, Android studio, PHP, Laravel.
+        </div>
+      </ng-template>
+      <ng-template #dictionaryModal>
+        <div class="m-4">
+          <h3> The Cantonese Dictionary</h3>
+          <span class="p-4">
+            This Cantonese dictionary was my first ever software application which I made while studying Andriod mobile apps with Udacity.
+            I used Java and Android studio. Later I added the web application and api using PHP and Laravel.
+          </span>
+          <div>
+            <img src="assets/dictionary-app/4.jpg" class="modal-image-mobile m-2" alt="dictionary image 4"/>
+            <img src="assets/dictionary-app/1.jpg" class="modal-image-mobile m-2" alt="dictionary image 1"/>
+            <img src="assets/dictionary-app/2.jpg" class="modal-image-mobile m-2" alt="dictionary image 2"/>
+            <img src="assets/dictionary-app/3.jpg" class="modal-image-mobile m-2" alt="dictionary image 3"/>
+          </div>
+        </div>
       </ng-template>
     </div>
     <div class='col my-2'>
       <app-project-card [title]="'Register'" [imageUrl]="'assets/Register-login.png'"
-                           [overlayContent]="registerOverlay">
+                        [overlayContent]="registerOverlay" [modalContent]="registerModal" class="cursor-pointer">
       </app-project-card>
-      <ng-template #registerOverlay>Register is the internal software application at EHSData which is in charge of keeping track of clients, licences for our products
-        (MonitorPro Desktop and MonitorPro Web) and invoicing for our clients.
+      <ng-template #registerOverlay>
+        <div class="row">The heart of EHS Data's licencing and invoicing completely written by me to replace several slow ineffective legacy appications.</div>
+        <div class="row">Key points: DotNet core, KnockoutJS, TypeScript, MVC, YAML pipeline</div>
       </ng-template>
       <ng-template #registerModal>
         <div class="m-4">
-          <h3> Monitor Pro Web</h3>
-          <span class="p-4">MPWeb is one of the main software products which EHSData sells.
-            MonitorPro gives organisations a single, centralised source for their environmental data.
-            Through an easy to use interface you can manage data and produce accurate reports
-            and analytics.
+          <h3> Monitor Pro Register</h3>
+          <div class="row">
+            <span class="p-4">
+            Register is the internal software application at EHSData which is in charge of keeping track of clients, licences for our products
+            (MonitorPro Desktop and MonitorPro Web) and invoicing for our clients.
           </span>
-          <div>
-            <img src="assets/dictionary-app/4.jpg" class="modal-image m-2"/>
-            <img src="assets/dictionary-app/1.jpg" class="modal-image m-2"/>
-            <img src="assets/dictionary-app/2.jpg" class="modal-image m-2"/>
-            <img src="assets/dictionary-app/3.jpg" class="modal-image m-2"/>
+          </div>
+          <div class="row">
+            <img src="assets/Register/1.png" class="modal-image-web m-2"/>
+            <img src="assets/Register/2.png" class="modal-image-web m-2"/>
+            <img src="assets/Register/3.png" class="modal-image-web m-2"/>
+            <img src="assets/Register/4.png" class="modal-image-web m-2"/>
+            <img src="assets/Register/5.png" class="modal-image-web m-2"/>
+            <img src="assets/Register/6.png" class="modal-image-web m-2"/>
           </div>
         </div>
       </ng-template>
     </div>
     <div class='col my-2'>
       <app-project-card [title]="'MonitorPro Web'" [imageUrl]="'assets/Web-ScheduledTasks.png'"
-                           [overlayContent]="webOverlay">
+                           [overlayContent]="webOverlay" [modalContent]="webModal" class="cursor-pointer">
       </app-project-card>
-      <ng-template #webOverlay><span>MPWeb is one of the main software products which EHSData sells.
+      <ng-template #webOverlay>
+        <div class="row">The main application sold by EHSData for monitoring and reporting on environment data </div>
+        <div class="row">Key Points: Angular, DotNet Framework, C#, TypeScript, VisualStudio, Yaml Pipeline, IIS, MVC</div>
+      </ng-template>
+      <ng-template #webModal>
+        <div class="m-4">
+          <h3> Monitor Pro Web</h3>
+          <div class="row">
+            <span class="p-4">
+            MPWeb is one of the main software products which EHSData sells.
             MonitorPro gives organisations a single, centralised source for their environmental data.
             Through an easy to use interface you can manage data and produce accurate reports
-            and analytics.</span>
+            and analytics.
+          </span>
+          </div>
+          <div class="row">
+            <img src="assets/MPWEB/1.png" class="modal-image-web m-2"/>
+            <img src="assets/MPWEB/2.png" class="modal-image-web m-2"/>
+            <img src="assets/MPWEB/3.png" class="modal-image-web m-2"/>
+            <img src="assets/MPWEB/4.png" class="modal-image-web m-2"/>
+            <img src="assets/MPWEB/5.png" class="modal-image-web m-2"/>
+            <img src="assets/MPWEB/6.png" class="modal-image-web m-2"/>
+          </div>
+        </div>
       </ng-template>
     </div>
     <div class='col my-2'>
@@ -51,7 +92,7 @@
                            [overlayContent]="activationsApiOverlay">
       </app-project-card>
       <ng-template #activationsApiOverlay>
-        <span>MPActivations is a api which MonitorPro desktop uses to activate new instances of itself.
+        <span>MPActivations is the api which MonitorPro desktop uses to activate new instances of itself vis HTTPS calls.
         It checks that the organisation has enough spare licences and reduces their number of available licences.
         </span>
       </ng-template>
